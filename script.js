@@ -93,7 +93,7 @@ headbtn.addEventListener("click", () => {
   } else {
     playerHealth -= edamage;
     enemyHelth -= pdamage;
-    let audio = new Audio("./punch-140236.mp3");
+    let audio = new Audio("./swords-collide-230574.mp3");
     audio.play();
     let value = `Player got ${edamage} % damage by eneime and enime got ${pdamage}`;
     loghistory.push(value);
