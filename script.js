@@ -93,7 +93,7 @@ headbtn.addEventListener("click", () => {
   } else {
     playerHealth -= edamage;
     enemyHelth -= pdamage;
-    let audio = new Audio("./swords-collide-230574.mp3");
+    let audio = new Audio("././swords-collide-230574.mp3");
     audio.play();
     let value = `Player got ${edamage} % damage by eneime and enime got ${pdamage}`;
     loghistory.push(value);
@@ -121,7 +121,7 @@ critbutton.addEventListener("click", () => {
        let pdamage=Math.floor(Math.random() * (20 - 10 + 1)) + 15;
       enemyHelth -= pdamage
      
-      let audio = new Audio("./boom-4-208747.mp3");
+      let audio = new Audio("./swords-collide-230574.mp3");
       audio.play();
       //   enemyminus(pdamage)// to make
       healthup(playerHealth, enemyHelth);
