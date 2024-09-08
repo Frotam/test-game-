@@ -4,12 +4,13 @@ let startingphase = document.querySelector(".startingphase");
 let body = document.querySelector("body");
 let playerh = document.querySelector(".playerh");
 let enemh = document.querySelector(".enemh");
-let rules = document.querySelector(".rules");
+let rules = document.querySelector(".rulee");
 let closerules = document.querySelector(".closerules");
 let Playagain = document.querySelector(".Playagain");
 
 closerules.addEventListener("click", () => {
   rules.style.display = "none";
+  rules.style.zIndex = "-2"; 
 });
 
 // starts the game
@@ -37,7 +38,9 @@ let sartinggame=(value)=>{
     });
   }, 1000);
   setTimeout(() => {
+    rules.style.zIndex = "-2"; 
     rules.style.display = "none";
+
   }, 10000);
 
 }
@@ -266,4 +269,14 @@ endbtn.addEventListener("click", () => {
 Playagain.addEventListener("click",()=>{
   sartinggame(0)
   reset()
+})
+
+ 
+document.addEventListener("visibilitychange",()=>{
+  if(document.hidden){
+    const song = document.getElementById("song");
+  }
+  else {
+    song.play();
+  }
 })

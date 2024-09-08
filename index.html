@@ -117,10 +117,9 @@
         }
 
         .rules {
-            left: 50%;
-            top: 20px;
-            width: 300px;
-            background-color: #ff0000;
+            
+            width: 100%;
+           
             color: white;
             font-weight: 700;
         }
@@ -152,7 +151,7 @@
       </div> -->
         <div class="maain">
             <div class="start">
-                <video style="width: 100%; height:100vh;object-fit: cover; z-index:-1; " autoplay muted loop class="position-absolute"
+                <video style="width: 100%; height:100vh;object-fit: cover; z-index:-1; "  autoplay muted loop class="position-absolute  "
                     src="./Fire background free.mp4"></video>
                 <h1 style="font-family: creepster;color:rgb(173, 16, 16)">Let the battle begins.....</h1>
                 <button class="startgame">Battle</button>
@@ -163,15 +162,18 @@
 
     <!-- main game -->
     <section class="maing">
-        <div class="rules position-absolute">
-            Rules: <br>
-            1). Critical can only be used when 3 circles are red posing high damage<br>
-            <hr>
-            2). Head poses high damage as compare to stomach but have a coole down of 2 to 5 sec only <br>
-            <hr>
-            3). Heals can only be used only one time if you made right combo you can gain heal more than two times
-            <hr>
-            <div class="d-flex justify-content-center"><button type="button" class="btn  closerules">Okay</button></div>
+        <div class="d-flex justify-content-center rules  position-absolute ">
+
+            <div class=" rulee" style="z-index: 1;background-color:#a92222 ;width:300px">
+                Rules: <br>
+                1). Critical can only be used when 3 circles are red posing high damage<br>
+                <hr>
+                2). Head poses high damage as compare to stomach but have a coole down of 2 to 5 sec only <br>
+                <hr>
+                3). Heals can only be used only one time if you made right combo you can gain heal more than two times
+                <hr>
+                <div class="d-flex justify-content-center"><button type="button" class="btn  closerules">Okay</button></div>
+            </div>
         </div>
         <div class="container">
             <div class="row ">
