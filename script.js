@@ -23,7 +23,7 @@ let sartinggame=(value)=>{
   sec.style.display = "block";
   document.body.style.background = "darkolivegreen";
 
-  let startaud = new Audio("/fight-deep-voice-172194.mp3");
+  let startaud = new Audio("./fight-deep-voice-172194.mp3");
   startaud.volume = 1;
   startaud.play().catch((error) => {
     console.log("Autoplay was prevented for startaud:", error);
