@@ -23,7 +23,7 @@ let sartinggame=(value)=>{
   sec.style.display = "block";
   document.body.style.background = "darkolivegreen";
 
-  let startaud = new Audio("./fight-deep-voice-172194.mp3");
+  let startaud = new Audio("/fight-deep-voice-172194.mp3");
   startaud.volume = 1;
   startaud.play().catch((error) => {
     console.log("Autoplay was prevented for startaud:", error);
@@ -93,7 +93,7 @@ headbtn.addEventListener("click", () => {
   } else {
     playerHealth -= edamage;
     enemyHelth -= pdamage;
-    let audio = new Audio("././swords-collide-230574.mp3");
+    let audio = new Audio("/punch-140236.mp3");
     audio.play();
     let value = `Player got ${edamage} % damage by eneime and enime got ${pdamage}`;
     loghistory.push(value);
